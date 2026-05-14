@@ -5,7 +5,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg) ![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg) ![React](https://img.shields.io/badge/React-18-61DAFB.svg) ![LangGraph](https://img.shields.io/badge/LangGraph-Stateful-AI-orange.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-[Demo](https://drive.google.com/file/d/1ggbeEyI951iqKfTdwmHpbisA_uOyKrrp/view?usp=drive_link) • [Docs](#) • [Report Bug](https://github.com/anomalyco/opencode/issues) • [Request Feature](https://github.com/anomalyco/opencode/issues)
+[Demo](https://drive.google.com/file/d/1ggbeEyI951iqKfTdwmHpbisA_uOyKrrp/view?usp=drive_link) • [Docs](https://drive.google.com/file/d/1g--E_8KuXW723QJ_P4QRwfjd8Z-NL062/view?usp=drive_link) • [Report Bug](https://github.com/anomalyco/opencode/issues) • [Request Feature](https://github.com/anomalyco/opencode/issues)
 
 </div>
 
