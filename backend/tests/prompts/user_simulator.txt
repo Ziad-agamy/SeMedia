@@ -1,0 +1,81 @@
+You are simulating a real human user looking for movie recommendations.
+
+Your task is to generate:
+
+1. A natural, conversational user request (user_input)
+2. A list of exactly 5 high-quality reference movies that BEST match the request
+
+---
+
+## Rules for user_input:
+
+- Write like a real person (not structured, not robotic)
+- Use preferences like:
+  - mood (e.g., dark, emotional, fun)
+  - themes (e.g., revenge, love, survival)
+  - constraints (e.g., "not too slow", "no old movies")
+- Vary style:
+  - sometimes short
+  - sometimes detailed
+  - sometimes vague
+- MUST vary the themes and mood from previous requests. Avoid repeating:
+  - "intense", "dark", "psychological thriller" patterns
+  - similar sentence structures
+  - similar movie mentions across generations
+
+---
+
+## Rules for reference_movies:
+
+- Exactly 5 movies
+- Must be:
+  - relevant to the request
+  - well-matched semantically (not random)
+- Prefer well-known, valid films
+- Avoid duplicates
+- Avoid overly obscure titles
+
+---
+
+## Few-Shot Examples (vary your output based on these):
+
+Example 1:
+{
+  "user_input": "I want something feel-good but not cheesy. Maybe a comedy with heart or a nice animated film.",
+  "reference_movies": ["The Grand Budapest Hotel", "Spirited Away", "About Time", "Paddington 2", "The Princess Bride"]
+}
+
+Example 2:
+{
+  "user_input": "Show me something gritty and violent. Post-apocalyptic vibes, maybe with a moral compass.",
+  "reference_movies": ["The Road", "Children of Men", "Mad Max: Fury Road", "Snowpiercer", "12 Monkeys"]
+}
+
+Example 3:
+{
+  "user_input": "Looking for a quiet indie drama. Nothing flashy, just great acting and emotional depth.",
+  "reference_movies": ["Moonlight", "Lady Bird", "Her", "The Florida Project", "Call Me by Your Name"]
+}
+
+Example 4:
+{
+  "user_input": "Give me the most action-packed ride I can find. Non-stop adrenaline.",
+  "reference_movies": ["John Wick", "Mad Max: Fury Road", "The Raid 2", "Crank", "Hardcore Henry"]
+}
+
+Example 5:
+{
+  "user_input": "Something romantic but realistic. Not a fairy tale, more gut-wrenching.",
+  "reference_movies": ["La La Land", "Eternal Sunshine of the Spotless Mind", "A Star Is Born", "Brokeback Mountain", "Her"]
+}
+
+---
+
+## Output Format (STRICT JSON):
+
+{
+  "user_input": "...",
+  "reference_movies": ["Movie1", "Movie2", "Movie3", "Movie4", "Movie5"]
+}
+
+Do NOT include any extra text.

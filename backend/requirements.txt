@@ -1,0 +1,37 @@
+# --- Web Framework & Server ---
+fastapi
+uvicorn[standard]
+scalar-fastapi
+# --- AI Orchestration & RAG ---
+langchain
+langchain-community
+langgraph
+langgraph-checkpoint-postgres
+langchain-huggingface
+langchain-groq
+langchain-openrouter
+langchain-ollama
+langchain-pinecone
+pinecone-client
+langchain-cohere
+rank_bm25
+
+# --- Database & State (PostgreSQL & Redis) ---
+sqlalchemy
+
+# --- Authentication & Security ---
+python-jose[cryptography]
+python-multipart
+passlib[bcrypt]
+psycopg[binary]
+
+# --- Validation & Environment ---
+pydantic[email]
+pydantic-settings
+python-dotenv
+asyncpg
+httpx
+
+ipykernel
+notebook
+ragas

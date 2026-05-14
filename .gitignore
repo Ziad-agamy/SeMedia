@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.egg
+.venv/
+venv/
+backend/venv/
+*.so
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend
+backend/tests/data/
+
+# Frontend (Vite + React + TypeScript)
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
