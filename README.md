@@ -26,7 +26,7 @@ Modern movie discovery is broken. Despite thousands of titles at our fingertips,
 
 SeMedia solves this by replacing keyword filters with a conversational agent that decodes emotional intent before retrieval.
 
-## ✨ Features
+## Features
 
 - **Conversational AI Engine** — A stateful LangGraph pipeline that clarifies user mood before recommending.
 - **Hybrid Retrieval** — Combines Pinecone dense vector search (70%) with BM25 keyword matching (30%) for maximum accuracy.
