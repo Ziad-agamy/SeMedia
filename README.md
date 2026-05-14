@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎬 SeMedia
+# SeMedia
 ### Discover films by how you feel, not how they're tagged.
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg) ![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg) ![React](https://img.shields.io/badge/React-18-61DAFB.svg) ![LangGraph](https://img.shields.io/badge/LangGraph-Stateful-AI-orange.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
@@ -9,7 +9,7 @@
 
 </div>
 
-## 📖 Overview
+## Overview
 
 SeMedia is an AI-powered movie discovery engine designed to bypass the "infinite scroll" of traditional streaming platforms. Instead of relying on static ratings or rigid genre tags, SeMedia leverages a stateful, multi-agent AI pipeline to understand the user's current emotional state and cinematic craving.
 
@@ -17,7 +17,7 @@ The system treats movie discovery as a conversation. Rather than jumping straigh
 
 The result is a curated list of recommendations that match an emotional fingerprint, providing a discovery experience that feels intuitive, human, and precisely aligned with the user's current mood.
 
-## 📉 The Problem
+## The Problem
 
 Modern movie discovery is broken. Despite thousands of titles at our fingertips, users face three core friction points:
 - **Choice Overload**: Infinite catalogs lead to decision paralysis; users spend more time scrolling than watching.
@@ -28,15 +28,15 @@ SeMedia solves this by replacing keyword filters with a conversational agent tha
 
 ## ✨ Features
 
-- 🧠 **Conversational AI Engine** — A stateful LangGraph pipeline that clarifies user mood before recommending.
-- 🔍 **Hybrid Retrieval** — Combines Pinecone dense vector search (70%) with BM25 keyword matching (30%) for maximum accuracy.
-- 🎯 **Contextual Reranking** — Uses Cohere Rerank (Cross-Encoder) to refine the top 10 candidates into the final top 5.
-- 🔄 **Session Persistence** — PostgreSQL-backed checkpointing restores conversation state and history across sessions.
-- ⚡ **Multi-Model Fallback** — Primary inference via Groq (Llama 3.3) with automatic failover to OpenRouter.
-- 🎭 **Cinematic Narrative Synthesis** — Converts casual chat into a detailed "imaginary movie description" for high-precision semantic search.
-- 🔐 **Secure Authentication** — JWT-based auth with bcrypt password hashing and Google OAuth integration.
+- **Conversational AI Engine** — A stateful LangGraph pipeline that clarifies user mood before recommending.
+- **Hybrid Retrieval** — Combines Pinecone dense vector search (70%) with BM25 keyword matching (30%) for maximum accuracy.
+- **Contextual Reranking** — Uses Cohere Rerank (Cross-Encoder) to refine the top 10 candidates into the final top 5.
+- **Session Persistence** — PostgreSQL-backed checkpointing restores conversation state and history across sessions.
+- **Multi-Model Fallback** — Primary inference via Groq (Llama 3.3) with automatic failover to OpenRouter.
+- **Cinematic Narrative Synthesis** — Converts casual chat into a detailed "imaginary movie description" for high-precision semantic search.
+- **Secure Authentication** — JWT-based auth with bcrypt password hashing and Google OAuth integration.
 
-## 🏗️ Architecture
+## Architecture
 
 ### System Flow
 
@@ -70,7 +70,7 @@ graph TD
 | **Database** | PostgreSQL | User profiles, conversation logs, and recommendations |
 | **Frontend** | React + Vite | High-performance UI with Tailwind & shadcn/ui |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 semedia/
@@ -99,7 +99,7 @@ semedia/
 └── .env                        # Environment variables (redacted)
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -165,7 +165,7 @@ cd backend
 python main.py
 ```
 
-## 📡 API Reference
+## API Reference
 
 ### `POST /api/ai/chat`
 Starts or continues a movie discovery session.
@@ -202,7 +202,7 @@ Creates a new user account.
 }
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome. Please follow these steps:
 1. Fork the repository.
@@ -210,7 +210,3 @@ Contributions are welcome. Please follow these steps:
 3. Commit changes (`git commit -m 'feat: add X functionality'`).
 4. Push to the branch.
 5. Open a Pull Request.
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
