@@ -1,37 +1,45 @@
-# --- Web Framework & Server ---
+# ── Web Framework & Server ───────────────────────────────────────────────────
 fastapi
 uvicorn[standard]
 scalar-fastapi
-# --- AI Orchestration & RAG ---
+
+# ── AI Orchestration (LangGraph / LangChain) ─────────────────────────────────
 langchain
 langchain-community
 langgraph
 langgraph-checkpoint-postgres
-langchain-huggingface
+
+# ── LLM Providers ────────────────────────────────────────────────────────────
 langchain-groq
 langchain-openrouter
 langchain-ollama
+langchain-huggingface
+
+# ── Vector Store & Retrieval ─────────────────────────────────────────────────
 langchain-pinecone
 pinecone-client
 langchain-cohere
 rank_bm25
 
-# --- Database & State (PostgreSQL & Redis) ---
+# ── Database & ORM ───────────────────────────────────────────────────────────
 sqlalchemy
+asyncpg
+psycopg[binary]
 
-# --- Authentication & Security ---
+# ── Authentication & Security ────────────────────────────────────────────────
 python-jose[cryptography]
 python-multipart
 passlib[bcrypt]
-psycopg[binary]
 
-# --- Validation & Environment ---
+# ── Validation & Configuration ───────────────────────────────────────────────
 pydantic[email]
 pydantic-settings
 python-dotenv
-asyncpg
+
+# ── HTTP Client ──────────────────────────────────────────────────────────────
 httpx
 
+# ── Development & Evaluation ─────────────────────────────────────────────────
 ipykernel
 notebook
 ragas
